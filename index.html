@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Conversor de Monedas Nacional</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <h1>Conversor de Monedas Chile</h1>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Convertir desde</h2>
+
+        <select id="tipoConversion">
+            <option value="clpToFx">CLP → Moneda Extranjera</option>
+            <option value="fxToClp">Moneda Extranjera → CLP</option>
+        </select>
+
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" placeholder="Ingrese el monto">
+
+        <label for="moneda">Seleccione moneda:</label>
+        <select id="moneda">
+            <option value="dolar">Dólar (USD)</option>
+            <option value="euro">Euro (EUR)</option>
+            <option value="utm">Utm (Utm)</option>
+            <option value="uf">Uf (UF)</option>
+            <option value="bitcoin">Bitcoin (BTC)</option>
+        </select>
+
+        <button id="btnConvertir">Convertir</button>
+
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="resultadoValor"></p>
+        </div>
+    </section>
+
+    <section class="card historial">
+        <h2>Historial de Conversiones</h2>
+        <ul id="historialLista"></ul>
+        <button id="btnLimpiarHistorial" class="btn-secundario">Limpiar historial</button>
+    </section>
+
+</main>
+
+<div class="grafico-container">
+    <h3>Variación últimos 10 días</h3>
+    <canvas id="graficoMoneda"></canvas>
+</div>
+
+<footer class="footer">
+    <p>Desarrollado por Gabriel • Powered by mindicador.cl</p>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
