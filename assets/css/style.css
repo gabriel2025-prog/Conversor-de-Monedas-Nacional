@@ -8,15 +8,20 @@ body {
 
 .header {
     background: #4f5051;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     color: #fff;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    border-radius: 12px;
 }
 
 .container {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 30px auto;
     padding: 15px;
+    background: #3d3939;
+    border-radius: 12px;
 }
 
 .card {
@@ -85,7 +90,7 @@ button:hover {
 
 .grafico-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 40px auto;
     background: #ffffff;
     padding: 20px;
